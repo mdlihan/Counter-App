@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <title>counter app</title>
+</head>
+
+<body>
+  <header>
+    <h2 class="text-center text-2xl font-bold text-teal-400">Counter App</h2>
+  </header>
+  
+  <main>
+    <!--search start-->
+    <div class="py-4 flex justify-center items-center">
+      <input class="border-2 w-5/6 p-2 rounded-full px-4" type="search" name="search" id="search">
+    </div>
+    <!--search end-->
+    
+    <div class="flex justify-between items-center  mx-6 mt-4">
+     
+     <select class="p-2 bg-violet-50 text-xl rounded-md" name="select" id="select">
+       <option value="basic">Basic </option>
+       <option value="medium">Medium </option>
+       <option value="ultra">Ultra</option>
+     </select>
+     
+     
+     <select class="p-2 bg-violet-50 text-xl rounded-md" name="sorted" id="sorted">
+       
+       <option value="sm-to-lg">sm-to-lg</option>
+       <option value="lg-to-sm">lg-to-sm</option>
+       
+     </select>
+     
+     <i id="cardplus" class="fa-solid fa-plus px-2.5 py-1 bg-sky-500 rounded-full text-2xl pointer"></i>
+    </div>
+    
+    <!--card start-->
+     <div id="card-container" class="flex justify-center items-center flex-wrap mt-8">
+      <!-- <div>
+         <div class="py-4  bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-xl h-30 w-80 relative overflow-hidden">
+           
+            <div class="flex justify-between items-center">
+              
+              <h2 class="text-center pl-4">card number <br> 1</h2>
+              
+
+
+<div class="relative">
+  
+      <i id="bars" class="fa-solid fa-bars text-white text-2xl pointer pr-4"></i>
+      
+      <div id="buttons" class="absolute right-0 top-0 bg-white border rounded-l-lg shadow-lg p-2 duration-1000">
+        
+        <i id="xmark" class="fa-solid fa-xmark text-2xl pointer px-2.5 py-1 bg-pink-500 rounded-full"></i>
+        
+        <button class="block px-4 py-2 text-left w-full text-green-500 mt-2">Update</button>
+        <button class="block px-4 py-2 text-left w-full text-red-500">Delete</button>
+      </div>
+      
+    </div>
+    
+
+
+
+
+            </div>
+           
+           <h3 class="text-2xl text-center text-white font-semibold">0</h3>
+
+          <div class="flex justify-between items-center mt-6 px-4">
+           <button id="increment" class="bg-green-400 p-2 rounded-xl w-24 mr-2" type="submit">increment</button> 
+           <button id="decrement" class="bg-pink-400 p-2 rounded-xl w-24" type="submit">decrement </button>
+           <button id="reset" class="bg-red-400 p-2 rounded-xl w-24 ml-2" type="submit">reset</button>
+          </div>
+         </div>
+         
+
+          
+       </div>-->
+       
+     </div>
+    <!--card end-->
+  <div id="pagination-controls" class="flex justify-between mb-12 mt-4 px-8 items-center">
+  <button id="prev-page" class="p-2 bg-green-400 rounded-xl">Previous</button>
+  <span id="page-info"></span>
+  <button id="next-page" class="p-2 bg-green-400 rounded-xl">Next</button>
+</div>
+  </main>
+ 
+</body>
+
+<script src="script.js"></script>
+</html>

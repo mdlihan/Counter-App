@@ -1,0 +1,10 @@
+#buttons{
+  width: 224px;
+  right: -224px;
+}
+#update-input{
+  top: -10px;
+}
+#xmark{
+  transition: 1.5s;
+}
